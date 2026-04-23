@@ -1,10 +1,10 @@
-package org.ezmeal.eurekasever;
+package com.ezmeal.eurekaserver;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class EurekaSeverApplicationTests {
+class EurekaServerApplicationTests {
 
     @Test
     void contextLoads() {

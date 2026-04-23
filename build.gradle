@@ -4,9 +4,9 @@ plugins {
     id 'io.spring.dependency-management' version '1.1.7'
 }
 
-group = 'org.ezmeal'
+group = 'com.ezmeal'
 version = '0.0.1-SNAPSHOT'
-description = 'eureka-sever'
+description = 'eureka-server'
 
 java {
     toolchain {
@@ -23,8 +23,8 @@ ext {
 }
 
 dependencies {
-    implementation 'org.springframework.boot:spring-boot-starter-web'
     implementation 'org.springframework.cloud:spring-cloud-starter-netflix-eureka-server'
+    implementation 'org.springframework.boot:spring-boot-starter-actuator'
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
     testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
 }

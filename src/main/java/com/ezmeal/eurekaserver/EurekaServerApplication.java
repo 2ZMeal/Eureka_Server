@@ -1,4 +1,4 @@
-package org.ezmeal.eurekasever;
+package com.ezmeal.eurekaserver;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -6,10 +6,10 @@ import org.springframework.cloud.netflix.eureka.server.EnableEurekaServer;
 
 @EnableEurekaServer
 @SpringBootApplication
-public class EurekaSeverApplication {
+public class EurekaServerApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(EurekaSeverApplication.class, args);
+        SpringApplication.run(EurekaServerApplication.class, args);
     }
 
 }

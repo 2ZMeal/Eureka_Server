@@ -24,16 +24,15 @@ ext {
 
 dependencies {
     implementation 'org.springframework.cloud:spring-cloud-starter-netflix-eureka-server'
-    implementation 'org.springframework.boot:spring-boot-starter-actuator'
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
     testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
 
-    // 분산 추적 & 모니터링
+    // traceId
+    implementation 'org.springframework.boot:spring-boot-starter-actuator'
     implementation 'io.micrometer:micrometer-tracing-bridge-brave'
     implementation 'io.zipkin.reporter2:zipkin-reporter-brave'
-    implementation 'net.ttddyy.observation:datasource-micrometer-spring-boot'
 
-// Prometheus
+    // Prometheus
     runtimeOnly 'io.micrometer:micrometer-registry-prometheus'
 }
 
